@@ -34,9 +34,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
-          envFrom:
-            - secretRef:
-                name: website
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
