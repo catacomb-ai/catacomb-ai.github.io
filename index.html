@@ -95,17 +95,11 @@ intro start-->
           <div class="mt-4">
 
             <!-- form start -->
-            <form id="request-form" class="form-row mb-3">
-              <div class="col">
-                <input type="email" name="email" class="form-control" placeholder="name@example.com">
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary">Request Access</button>
-              </div>
-            </form>
+            <a class="btn btn-lg btn-primary" href="mailto:arun@dormroomfund.com" style="border-radius: 5px; margin-right: 0.5rem">Request Access</a> 
+            <a class="btn btn-lg btn-dark" href="https://github.com/catacomb-ai/" style="border-radius: 5px;"><i style="margin-right: 0.25rem" class="fab fa-github"></i> Github</a>
             <!-- form end -->
 
-            <ul class="d-sm-flex pl-3">
+            <ul class="d-sm-flex pl-3 mt-4">
               <li class="mr-lg-5 mr-4"> Free tier available </li>
               <li class="mr-lg-5 mr-4"> No set-up costs </li>
               <li class="mr-lg-5 mr-4"> Cancel any time </li>
@@ -410,7 +404,7 @@ pricing plan start -->
 
                 <p class="font-weight-normal mb-2">Get started in under 15 minutes.</p>
 
-                <a class="btn btn-dark mt-3" href="#">Join Now</a>
+                <a class="btn btn-dark mt-3" href="mailto:arun@dormroomfund.com">Request Access</a>
 
               </div>
             </div>
@@ -421,7 +415,7 @@ pricing plan start -->
 
                 <p class="font-weight-normal mb-2 text-white">Flexible pricing at any scale.</p>
 
-               <a class="btn btn-primary mt-3" href="#">Contact Us</a>
+               <a class="btn btn-primary mt-3" href="/pricing">View Pricing</a>
 
               </div>
             </div>
@@ -679,7 +673,6 @@ Javascript -->
   <script src="libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="libs/popper/popper.min.js"></script>
   <script src="libs/bootstrap/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
 
   <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
   <script src="libs/appear/jquery.appear.js"></script>
@@ -691,26 +684,6 @@ Javascript -->
 
   <!-- Template Scripts (Do not remove)-->
   <script src="js/custom.js"></script>
-
-  <script>
-    $( document ).ready(function() {
-      $.notify.addStyle('happyblue', {
-        html: "<div><span data-notify-text/></div>",
-        classes: {
-          base: {
-            "white-space": "nowrap",
-            "background-color": "blue",
-          }
-        }
-      });
-
-      $('#request-form').on('submit', function(e) { //use on if jQuery 1.7+
-        e.preventDefault();  //prevent form from submitting
-        const data = $("#request-form:input").serializeArray();
-        $.notify("We've received your email!", "happyblue");
-      });
-    });
-  </script>
 
 </body>
 
